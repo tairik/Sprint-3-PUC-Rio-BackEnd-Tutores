@@ -23,7 +23,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 docker build --tag api-tutores-docker . 
 
-docker run -d --name api-tutores-docker -p 6001:6000 api-tutores-docker  
+docker run -d --name api-tutores-docker -p 4001:5000 api-tutores-docker  
 
 ## Execução local
 
@@ -38,14 +38,14 @@ Este comando instala as dependências/bibliotecas, descritas no arquivo `require
 Para executar a API basta lançar o seguinte comando no terminal:
 
 ```
-(env)$ flask run --host 0.0.0.0 --port 5001
+(env)$ flask run --host 0.0.0.0 --port 4001
 ```
 
 Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor
 automaticamente após uma mudança no código fonte. 
 
 ```
-(env)$ flask run --host 0.0.0.0 --port 5001 --reload
+(env)$ flask run --host 0.0.0.0 --port 4001 --reload
 ```
 
-Abra o [http://localhost:5001/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+Abra o [http://localhost:4001/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
