@@ -1,0 +1,55 @@
+[2023-09-06 17:39:17,844] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:39:20,082] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:39:20,909] WARNING add_tutor() L61   Erro ao adicionar tutor 'José', Tutor de mesmo nome já salvo na base :/ - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py L61  
+[2023-09-06 17:39:20,910] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:39:20] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:40:43,741] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:40:43,958] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:07,037] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:07,209] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:10,657] ERROR log_exception() L1449 Exception on /tutor [POST] - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask/app.py L1449
+Traceback (most recent call last):
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask_openapi3/scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+  File "/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/flask_openapi3/do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py", line 39, in add_tutor
+    if results["is_valid_format"]['value'] == 'False':
+NameError: name 'results' is not defined
+[2023-09-06 17:41:10,678] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:41:10] "[35m[1mPOST /tutor HTTP/1.1[0m" 500 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:21,020] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:21,116] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:23,232] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:41:23] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:32,997] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:33,166] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:41:38,880] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:41:39,745] WARNING add_tutor() L62   Erro ao adicionar tutor 'José', Tutor de mesmo nome já salvo na base :/ - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py L62  
+[2023-09-06 17:41:39,748] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:41:39] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:08,094] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:08,455] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:09,712] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:42:10,528] WARNING add_tutor() L62   Erro ao adicionar tutor 'José', Tutor de mesmo nome já salvo na base :/ - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py L62  
+[2023-09-06 17:42:10,530] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:42:10] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:12,262] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:42:12,956] WARNING add_tutor() L62   Erro ao adicionar tutor 'José', Tutor de mesmo nome já salvo na base :/ - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py L62  
+[2023-09-06 17:42:12,957] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:42:12] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:20,037] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:20,152] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:23,122] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:42:23,880] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:42:23] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:31,824] INFO _log() L224   * Detected change in '/Users/tairik/PycharmProjects/mvp-tairik/rest_api_tutores/app.py', reloading - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:32,209] INFO _log() L224   * Restarting with stat - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:33,094] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:42:33,858] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:42:33] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:48,188] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
+[2023-09-06 17:42:49,078] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 17:42:49] "[31m[1mPOST /tutor HTTP/1.1[0m" 409 - - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/werkzeug/_internal.py L224 
+[2023-09-06 17:42:59,677] INFO _new_conn() L757  Starting new HTTPS connection (1): emailvalidation.abstractapi.com - call_trace=/Users/tairik/PycharmProjects/mvp-tairik/venv/lib/python3.9/site-packages/requests/packages/urllib3/connectionpool.py L757 
