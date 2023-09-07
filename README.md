@@ -23,7 +23,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 docker build --tag api-tutores-docker . 
 
-docker run -d --name api-tutores-docker -p 5001:5000 api-tutores-docker  
+docker run -d --name api-tutores-docker -p 6001:6000 api-tutores-docker  
 
 ## Execução local
 
